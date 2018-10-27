@@ -5,7 +5,7 @@ import Action from './components/action/Action';
 import Options from './components/options/Options';
 import AddOptions from './components/addOptions/AddOptions'
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -50,7 +50,7 @@ class App extends Component {
   
   handlePick() {
     const randomNumber = Math.floor(Math.random() * this.state.options.length);
-    const option = this.state.options[randomNumber]
+    var option = this.state.options[randomNumber]
     alert(option)
   }
   
@@ -88,5 +88,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
