@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Option from './option/Option'
 
-class Options extends Component {
-
+export default class Options extends Component {
   render() {
     return (
       <div>
@@ -21,5 +20,3 @@ class Options extends Component {
     );
   }
 }
-
-export default Options;
